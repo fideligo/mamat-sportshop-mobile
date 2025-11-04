@@ -6,7 +6,7 @@ class ButtonItem extends StatelessWidget {
   final IconData icon;
   final Color warna;
 
-  const ButtonItem({required this.title, required this.icon, required this.warna});
+  const ButtonItem({super.key, required this.title, required this.icon, required this.warna});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class ButtonItem extends StatelessWidget {
       elevation: 2.0,
       child: InkWell(
         onTap: () {
-          ScaffoldMessenger.of(context)..hideCurrentSnackBar()..showSnackBar(SnackBar(content: Text("Kamu telah menekan tombol " + title)));
+          ScaffoldMessenger.of(context)..hideCurrentSnackBar()..showSnackBar(SnackBar(content: Text("Kamu telah menekan tombol $title")));
         },
         child: SizedBox(
           height: 100,

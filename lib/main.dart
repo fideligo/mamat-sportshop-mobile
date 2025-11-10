@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mamatsportshop_mobile/home_page.dart';
+import 'package:mamatsportshop_mobile/screens/home_page.dart';
 
 void main() {
   runApp(const MyApp());

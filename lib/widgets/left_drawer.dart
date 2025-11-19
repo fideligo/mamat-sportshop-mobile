@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mamatsportshop_mobile/screens/home_page.dart';
 import 'package:mamatsportshop_mobile/screens/add_product.dart';
+import 'package:mamatsportshop_mobile/screens/signin_page.dart';
+import 'package:mamatsportshop_mobile/screens/signup_page.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -56,6 +58,26 @@ class LeftDrawer extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => const AddProductPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.add_box, color: Color(0xFF07141E)),
+            title: const Text('Sign Up Page'),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const SignUpPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.add_box, color: Color(0xFF07141E)),
+            title: const Text('Sign In Page'),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const SignInPage()),
               );
             },
           ),

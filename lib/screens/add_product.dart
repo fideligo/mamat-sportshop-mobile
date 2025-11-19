@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mamatsportshop_mobile/models/app_bar.dart';
-import 'package:mamatsportshop_mobile/models/form_widget.dart';
-import 'package:mamatsportshop_mobile/models/left_drawer.dart';
+import 'package:mamatsportshop_mobile/widgets/app_bar.dart';
+import 'package:mamatsportshop_mobile/widgets/form_widget.dart';
+import 'package:mamatsportshop_mobile/widgets/left_drawer.dart';
 
 class AddProductPage extends StatefulWidget {
   const AddProductPage({super.key});
